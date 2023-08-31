@@ -1,0 +1,129 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+	font-family: "Inter";
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.head-container {
+	display: flex;
+	justify-content: center;
+	gap: 3.2rem;
+	height: 65%;
+	background-color: #ffcd9e;
+}
+.heading {
+	font-size: 2.6rem;
+	color: #282828;
+	line-height: 3.2rem;
+}
+.main-para {
+	margin-right: 14rem;
+	font-size: 1.25rem;
+	color: #484848;
+	line-height: 1.8rem;
+}
+.secondary-para {
+	font-weight: 800;
+	font-size: 1.25rem;
+	margin-bottom: 1rem;
+}
+.light-para {
+	text-align: center;
+	width: 26rem;
+	color: #fff;
+}
+.input {
+	width: 26rem;
+	height: 4.6rem;
+	border: 4px solid #282828;
+	font-size: 1.5rem;
+	padding: 1.6rem;
+	border-radius: 10px;
+}
+.input::placeholder {
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: rgba(136, 136, 136, 1);
+}
+.input-button-container {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	gap: 1.6rem;
+}
+.button {
+	flex-grow: 1;
+	height: 4.6rem;
+	font-size: 1.25rem;
+	font-weight: 600;
+	border-radius: 10px;
+	background-color: #282828;
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.button:hover {
+	background-color: hsl(0, 0%, 5%);
+}
+.aside {
+	width: 47rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1.75rem;
+	padding: 0 1.6rem;
+	margin: 3.6rem 0;
+}
+
+.image {
+	width: 36rem;
+	height: 36rem;
+}
+.image-container {
+	margin-right: 2rem;
+}
+.footer-container {
+	flex-grow: 1;
+	color: #fff;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	background-color: #282828;
+}
+
+.left-list-container,
+.right-list-container {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.left-list,
+.right-list {
+	display: flex;
+	flex-direction: column;
+	gap: 1.125rem;
+}
+.right-list {
+	align-items: flex-end;
+}
+
+.left-list > li,
+.right-list > li {
+	list-style: none;
+	font-size: 1rem;
+}
+.right-list > li:nth-last-child(1) {
+	margin-top: 1rem;
+}
